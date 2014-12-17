@@ -18,7 +18,7 @@ if (b==1)
        n=n+1;
        d=f/n;
        printf(" %d ",d);
-    if (d==e)
+    if (d%1=0)
     {
         printf("neprostoe");
     }

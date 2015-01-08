@@ -3,15 +3,30 @@
 
 int main()
 {
-     int n,a=1,b=1,c;
-     printf("n");
 
-    scanf(n);
-    for (int i=1;i<=n;i++)
-    a=b;
-    b=c;
-    c=a+b;
+    int n,a,b=1,c=1;
 
-    printf(c);
+    scanf("%d",&n);
+
+    for(int i=1 ; i<=n; i++)
+    {
+        if(i==1)
+        {
+            printf("1 ");
+        }
+        else if(i==2)
+        {
+            printf("1 ");
+        }
+        else
+        {
+            a=b+c;
+            printf("%d ",a);
+
+            c=b;
+            b=a;
+        }
+
+    }
     return 0;
 }

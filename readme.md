@@ -25,6 +25,38 @@ int main()
        }printf("%d %d in array\n",c,field[a][b]); }}
 
 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int field[10][10],c=1;
+    for (int a=0;a<10;a=a+1)
+        {
+            for (int b=0;b<10;b=b+1)
+            { field[a][b]=rand()%1+1;
+            printf("%d ",field[a][b]);
+            }
+            printf("\n");
+        }
+        for (int a=0;a<10;a=a+1)
+            {
+                for (int b=0;b<10;b=b+1)
+                {
+                    for (int i=1;i<11;i=i+1)
+                    {
+                        if(field[a][b]==field[a+i][b+i])
+                        {
+                            c=c+1;
+                        }
+                        printf("%d %d in array\n",c,field[a][b]);
+                    }
+                }
+            }
+            return 0;
+}
+
+
     return 0;
 }
 

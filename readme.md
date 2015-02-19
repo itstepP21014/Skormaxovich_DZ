@@ -230,3 +230,61 @@ void treatSigWinch(int signo)
 
 
 
+
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <time.h>
+#define ARR 10
+
+bool checkSorting(int mas[], int size);
+void replacement(int mas[], int b);
+
+int main()
+{
+int mas[ARR], i;
+printf("\n\nEnter the array: \n\n");
+for (i=0; i<ARR; ++i)
+{
+scanf ("%d", &mas[i]);
+}
+//void function;
+if (checkSorting(mas, ARR))
+printf ("\n\nThe array is otsortirovan\n");
+else
+printf ("\n\nThe array isn`t otsortirovan");
+return 0;
+}
+bool checkSorting(int mas[], int size)
+{
+    int a=0;
+    for(int i=0;i<size;++i)
+    {
+        if (mas[i]<mas[i+1])
+            a+=1;
+    }
+    if (a==ARR)
+        return 1;
+    else return 0;
+}
+void menyaem_randomnieye_chisla(int mas[],int size)
+{
+ int arr1=rand()%size;
+ int arr2=rand()%size;
+ int b=0;
+ b=mas[arr1];
+ mas[arr1]=mas[arr2];
+ mas[arr2]=b;
+
+
+}
+
+
+
+
+
+

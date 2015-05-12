@@ -80,7 +80,7 @@ int main()
             printf ("%d| ",y);
         }
 
-        printf ("\n  0 1 2 3 4 5 6 7 \\\/");
+        printf ("\n  0 1 2 3 4 5 6 7 \\/");
 
         if(m==700)
 {
@@ -225,7 +225,7 @@ printf("%c ",field[x][y]);
 }
 printf ("%d| ",y);
 }
-printf ("\n 0 1 2 3 4 5 6 7 \\\\");
+printf ("\n 0 1 2 3 4 5 6 7 \\/");
 /* if (field[x1][y1]==178)
 {
 bank=field[x1][y1];

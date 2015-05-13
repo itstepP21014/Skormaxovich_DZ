@@ -257,7 +257,6 @@ return 0;
 #define C 48
 int main()
 {
-
     int field[8][8],score_white=0,score_black=0,number_white=0,number_black=0;
     for (int y=0; y<8; y++)
     {
@@ -280,9 +279,6 @@ int main()
             field[x][y]=B;
         }
     }
-
-
-
     for (int m=1; m<10000; m++)
     {
         for(int q=0; q<8; q++)
@@ -292,12 +288,10 @@ int main()
                 int number_white=0,number_black=0;
                 if (field[q][w]==A)
                 {
-
                     number_white=number_white+1;
                 }
                 if (field[q][w]==B)
                 {
-
                     number_black=number_black+1;
                 }
             }
@@ -311,13 +305,10 @@ int main()
             }
             if(score_black>score_white)
             {
-
-
                 printf("\nPlayer 2 win!");
                 exit(1);
             }
         }
-
         system("clear");
         printf ("x----------------->y   player 1:%d,player 2:%d\n  0 1 2 3 4 5 6 7  |",score_white,score_black);
         for (int y=0; y<8; y++)
@@ -327,13 +318,10 @@ int main()
             for (int x=0; x<8; x++)
             {
                 printf("%c ",field[x][y]);
-
             }
             printf ("%d| ",y);
         }
-
         printf ("\n  0 1 2 3 4 5 6 7 \\/");
-
         if(m==700)
         {
             m=2;
@@ -353,7 +341,6 @@ int main()
         scanf("%d",&x1);
         printf("\n Enter y:");
         scanf("%d",&y1);
-
         if (field[x1][y1]==C )
         {
             printf("\n Error");
@@ -362,14 +349,11 @@ int main()
             printf("\n Enter y:");
             scanf("%d",&y1);
         }
-
         if (n==1)
         {
-
             if (field[x1][y1]==A)
             {
                 bank=field[x1][y1];
-
                 int a,b=1;
                 if(field[x1+1][y1+1]==B)
                 {
@@ -405,6 +389,7 @@ int main()
                         case 2:
                             break;
                         }
+                        field[x1][y1]=bank;
                     }
                 }
                 if(b==1)
@@ -417,17 +402,14 @@ int main()
                     bank=field[x1][y1];
                     field[x1][y1+1]=bank;
                     field[x1][y1]=C;
-
                 }
             }
         }
         if(n==0)
         {
-
             if (field[x1][y1]==B)
             {
                 bank=field[x1][y1];
-
                 int a,b=1;
                 if(field[x1+1][y1-1]==A)
                 {
@@ -478,7 +460,6 @@ int main()
                     field[x1][y1]=C;
                 }
             }
-
             system("clear");
             printf ("x----------------->y\n 0 1 2 3 4 5 6 7 |");
             for (int y=0; y<8; y++)
@@ -488,17 +469,11 @@ int main()
                 for (int x=0; x<8; x++)
                 {
                     printf("%c ",field[x][y]);
-
                 }
                 printf ("%d| ",y);
             }
             printf ("\n 0 1 2 3 4 5 6 7 \\\\");
-            /* if (field[x1][y1]==178)
-            {
-            bank=field[x1][y1];
-            field[x1][y1+1]=bank;
-            field[x1][y1]=0;
-            }*/
+            
             if (n==1)
             {
                 printf("\n Player 1 ");
@@ -507,11 +482,9 @@ int main()
             {
                 printf("\n Player 2 ");
             }
-            printf("\nFigur : %c",bank);
 
             system("clear");
         }
     }
     return 0;
-}
-*/
+} */

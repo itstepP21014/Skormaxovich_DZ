@@ -252,8 +252,8 @@ return 0;
 /*
 #include <stdio.h>
 #include <stdlib.h>
-#define A 57
-#define B 42
+#define A 87
+#define B 66
 #define C 48
 int main()
 {
@@ -332,7 +332,7 @@ int main()
             printf ("%d| ",y);
         }
 
-        printf ("\n  0 1 2 3 4 5 6 7 \\\/");
+        printf ("\n  0 1 2 3 4 5 6 7 \\/");
 
         if(m==700)
         {

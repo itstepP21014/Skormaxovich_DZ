@@ -254,7 +254,7 @@ return 0;
 #include <stdlib.h>
 #define A 87
 #define B 66
-#define C 48
+#define C 32
 int main()
 {
     int field[8][8],score_white=0,score_black=0,number_white=0,number_black=0;
